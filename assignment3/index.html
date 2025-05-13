@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg_image"></div>
+    <div class="container">
+        <h1 class="ins_name">KG Engineering Institute</h1>
+        <br>
+        <h2>Student Registration Form</h2>
+        <br>
+        <fieldset class="field">
+            <legend class="ftext">Personal Details :-</legend>
+        <form action="#" method="post">
+            <div class="stu_image">
+            <label for="st_img" class="text">Student image :</label>
+            <input type="file" id="st_img" name="st_image" class="inp_img" accept="image/*,jpg/*,jpeg/*,png/*">
+            <label for="st_img" class="text2">(less than 5MB)</label>
+            </div>
+            <level for="sName" class="text">Student Name : </level>
+            <input type="text" name="sName" id="sName" class="input" placeholder="Enter Your Name">
+            <br>
+            <level for="fName" class="text">Father's Name : </level>
+            <input type="text" name="fName" id="fName" class="input" placeholder="Enter Your Father's Name">
+            <br>
+            <level for="mName" class="text">Mother's Name : </level>
+            <input type="text" name="mName" id="mName" class="input" placeholder="Enter Your Mother's Name">
+            <br>
+            <level for="Gender" class="text">Gender : </level>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="transgender" name="gender" value="transgender">
+            <label for="transgender">Transgender</label>
+            <br>
+            <level for="dob" class="text">Date of Birth : </level>
+            <input type="date" name="dob" id="dob" class="input" placeholder="DD-MM-YYYY">
+            <br>
+            <level for="email" class="text">E-mail : </level>
+            <input type="email" name="email" id="email" class="input" placeholder="example123@xyz.com">
+            <br>
+            <label for="level">Level : </label>
+            <select name="level" id="level" class="list">
+                <option value="High_School">High School</option>
+                <option value="polytechnic">Polytechnic</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="PHD">PHD</option>
+            </select>
+            <br>
+            <label for="department">Department : </label>
+            <select name="department" id="department" class="list">
+                <option value="computer">Computer Science & Technology</option>
+                <option value="electrical">Electrical Engineering</option>
+                <option value="mechanical">Mechanical Engineering</option>
+                <option value="electronics">Electronics and Tele-Communication</option>
+                <option value="civil">Civil Engineering</option>
+            </select>
+            <br>
+            <level for="mobile" class="text">Tel/Mobile No. : </level>
+            <input type="tel" name="number" id="number" class="input" placeholder="Enter Your Mobile Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+        </form>
+        </fieldset>
+        <fieldset class="field">
+            <legend class="ftext">Permanent Address</legend>
+            <form action="#" method="post">
+                <level for="state" class="text">State : </level>
+                <input type="text" name="state" id="state" class="input" placeholder="State">
+                <br>
+                <level for="city" class="text">City : </level>
+                <input type="text" name="city" id="city" class="input" placeholder="City">
+                <br>
+                <level for="zip" class="text">Zip : </level>
+                <input type="tel" name="zip" id="zip" class="input" placeholder="Zip Code" maxlength="6">
+                <br>
+                <level for="mobile" class="text">Tel/Mobile No. : </level>
+                <input type="tel" name="number" id="number" class="input" placeholder="Enter Your Mobile Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+            </form>
+        </fieldset>
+        <fieldset class="field">
+            <legend class="ftext">Temporary Address</legend>
+            <form action="#" method="post">
+                <level for="chkBox" class="text">Same as Permanent Address : </level>
+                <input type="checkbox" name="chkBox" id="chkBox" class="chkBox">
+                <br>
+                <level for="state" class="text">State : </level>
+                <input type="text" name="state" id="state" class="input" placeholder="State">
+                <br>
+                <level for="city" class="text">City : </level>
+                <input type="text" name="city" id="city" class="input" placeholder="City">
+                <br>
+                <level for="zip" class="text">Zip : </level>
+                <input type="tel" name="zip" id="zip" class="input" placeholder="Zip Code" maxlength="6">
+                <br>
+                <level for="mobile" class="text">Tel/Mobile No. : </level>
+                <input type="tel" name="number" id="number" class="input" placeholder="Enter Your Mobile Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+                <br>
+                <button type="submit" class="submitBtn">Register</button>
+                <button type="reset" class="resetBtn">Reset</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
