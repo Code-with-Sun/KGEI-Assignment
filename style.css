@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.bg_image{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url(./images/kgei.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.container{
+    width: calc(100vw-60vw);
+    height: 80%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: transparent;
+    background-color: rgba(55, 237, 237, 0.342);
+    padding: 2% 2% 0% 5%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.ins_name{
+    text-align: center;
+    background: -webkit-linear-gradient(#980000,#f94103,#e80505);  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2{
+    text-align: center;
+}
+
+.stu_image{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.inp_img{
+    width: 25%;
+    height: 13vh;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-left: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.text{
+    font-size: 1.1em;
+    font-family: "Jost", sans-serif;
+    margin: 2px 0;
+}
+
+.text2{
+    font-size: 0.8em;
+    font-family: "Jost", sans-serif;
+    margin-left: 3%;
+}
+
+.input{
+    background: transparent;
+    height: 3.5vh;
+    width: 60%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.794);
+    padding-left: 5px;
+    width: min-content;
+}
+
+.input:hover{
+    background-color: rgba(242, 239, 240, 0.5);
+    border-color: #fff  #000 #000 #fff;    
+}
+
+.list{
+    background: transparent;
+    margin: 6px 0;
+}
+
+.list:hover{
+    background-color: rgba(242, 239, 240, 0.5);
+    border-color: #fff  #000 #000 #fff;    
+}
+.field{
+    border: none;
+}
+.ftext{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: rgba(1, 39, 39, 0.526);
+    padding: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+
+    margin: 2%;
+}
+
+.submitBtn, .resetBtn{
+    width: 20%;
+    height: 20%;
+    margin: 4% 12%;
+    font-size: 1.1em;
+    padding: 1%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: linear-gradient(115deg, #f97794, #6200ff, #3498db);
+    color: #fff;
+    border: 2px #3498db;
+}
+
+/* to hide scrollbar  */
+::-webkit-scrollbar {
+  display: none;
+}
